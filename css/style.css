@@ -836,14 +836,11 @@ body {
 
 .showcase-area {
   height: 50vh;
-  background: linear-gradient(
-      rgba(240, 240, 240, 0.144),
-      rgba(255, 255, 255, 0.336)
-    ),
-    url("../media/praca/20210729_170324.jpg");
+  background:url("../media/praca/20210729_170324.jpg");
   background-size: cover;
-  background-position: center;
+  background-position:bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .showcase-container {
@@ -969,7 +966,6 @@ body {
 .gallery img {
   width: 300px;
   height: 200px;
-  filter: grayscale(100%);
   transition: 1s;
   cursor: pointer;
   padding: 14px;
@@ -983,7 +979,6 @@ body {
 }
 
 .gallery img:hover {
-  filter: grayscale(0);
   transform: scale(1.1);
 }
 
