@@ -18,9 +18,9 @@ window.addEventListener("scroll", reveal);
 
 
 var images = [
-  "../media/praca/1.jpg",
-  "../media/praca/2.jpg",
-  "../media/praca/3.jpg"
+  "./media/praca/1.jpg",
+  "./media/praca/2.jpg",
+  "./media/praca/3.jpg"
 ]
 
 var imageHead = document.querySelector(".showcase-area");
