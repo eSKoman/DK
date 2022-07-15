@@ -592,13 +592,17 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-3 {
@@ -625,6 +629,10 @@ video {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-full {
@@ -684,10 +692,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -696,14 +700,22 @@ video {
   padding: 1.25rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.py-3 {
+.pt-3 {
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pb-8 {
@@ -714,12 +726,13 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-3xl {
@@ -732,26 +745,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#555\] {
@@ -941,11 +940,12 @@ body {
 
 .showcase-area {
   height: 50vh;
-  background:url("../media/praca/20220607_083300.jpg");
+  background:url("../media/praca/1.jpg");
   background-size: cover;
   background-position:bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  transition: 1s;
 }
 
 .showcase-container {
@@ -1083,12 +1083,12 @@ body {
 /* ......./ Gallery /......... */
 
 .gallery {
-  margin: 0px 50px;
+  margin: 0px 0px;
   display: grid;
-  place-items: center;
+  justify-items:center;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 200px 200px;
-  gap: 1rem;
 }
 
 .gallery img {
@@ -1283,7 +1283,7 @@ body {
     position: absolute;
     top: 5px;
     right: 15px;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
