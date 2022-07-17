@@ -18,9 +18,9 @@ window.addEventListener("scroll", reveal);
 
 
 var images = [
-  "./media/praca/1.jpg",
-  "./media/praca/2.jpg",
-  "./media/praca/3.jpg"
+  "./media/titulky/20210408_160951.jpg",
+  "./media/titulky/20210729_170235.jpg",
+  "./media/titulky/20220405_161303.jpg"
 ]
 
 var imageHead = document.querySelector(".showcase-area");
