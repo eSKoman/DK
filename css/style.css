@@ -618,10 +618,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -650,10 +646,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-around {
@@ -718,6 +710,10 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -732,10 +728,6 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .text-center {
@@ -1210,10 +1202,6 @@ nav{
   font-size: large;
   font-weight: 700;
   transition: 350ms ease-in-out 250ms;
-}
-
-.nav-links li a:hover {
-  color: sienna;
 }
 
 .nav-links li {
