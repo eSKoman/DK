@@ -668,11 +668,6 @@ video {
   border-width: 1px;
 }
 
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-}
-
 .border-\[sienna\] {
   --tw-border-opacity: 1;
   border-color: rgb(160 82 45 / var(--tw-border-opacity));
@@ -893,24 +888,9 @@ body {
   height: 50vh;
   background:url("../media/titulky/20210408_160951.jpg");
   background-size: cover;
-  background-position:bottom;
+  background-position:center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   transition: 1s;
-}
-
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 1.6rem;
-  text-shadow: 1px 1px 1px black;
-}
-
-.main-title {
-  text-transform: uppercase;
 }
 
 /* ......//about us//...... */
