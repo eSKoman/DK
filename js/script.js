@@ -1,3 +1,4 @@
+//Animation with scroll
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -13,10 +14,9 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
 
-
+//Change background
 var images = [
   "./media/titulky/20210408_160951.jpg",
   "./media/titulky/20210729_170235.jpg",
@@ -33,3 +33,29 @@ setInterval(function () {
     i = 0;
   }
 }, 3000);
+
+//Navigation
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', () => {
+  openMenu();
+});
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', () => {
+    openMenu();
+  })
+};
+
+function openMenu() {
+  //Animate Links
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+
+  //Hamburger Animation
+  hamburger.classList.toggle("toggle");
+}
