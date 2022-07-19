@@ -1,9 +1,13 @@
-<html lang="sk">
+<!DOCTYPE html>
+<html lang="sk-SK">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Kovac s.r.o., Kovac ploché strechy, Ploché strechy, Hydroizolácia">
+    <meta name="description" content="Kovac s.r.o. Ploché strechy">
+    <meta name="author" content="Slavomír Kotlár">
     <title>Kovac s.r.o.</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,11 +16,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/lightbox.min.css" rel="stylesheet" />
     <script src="./js/lightbox-plus-jquery.min.js"></script>
+    
 </head>
 
-<body>
-    <nav class="bg-opacity-50 bg-black">
-        <div class="logo text-[white] flex items-center pl-6">
+<body id="home">
+    <nav class="bg-opacity-50 bg-black fixed">
+        <div class="logo text-[white] flex items-center pl-6 w-1/2">
             <a href="index.html" class="flex flex-col">
                 <span class="text-base break-all pl-10">Ploché strechy</span>
                 <span class="text-4xl break-all -my-2">Kovac s.r.o.</span>
@@ -28,17 +33,10 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li>
-                <div class="text-[white] flex items-center">
-                    <a href="index.html" class="flex flex-col">
-                        <span class="text-base break-all pl-10">Ploché strechy</span>
-                        <span class="text-4xl break-all -mt-2">Kovac s.r.o.</span>
-                    </a>
-                </div>
-            </li>
-            <li><a href="#home" class="link">Domov</a></li>
+            <li><a href="#home" class="link">Vitajte</a></li>
             <li><a href="#about" class="link">O nás</a></li>
-            <li><a href="#arbeit" class="link">Naša práca</a></li>
+            <li><a href="#sluzby" class="link">Služby</a></li>
+            <li><a href="#arbeit" class="link">Galéria</a></li>
             <li><a href="#contact" class="link">Kontakt</a></li>
         </ul>
     </nav>
@@ -50,7 +48,7 @@
         <div class="about-wrapper container">
             <div class="about-text">
                 <p class="small">O nás</p>
-                <h2>Kovac s.r.o.</h2>
+                <h2 class="text-left text-[black] m-0 font-bold">Kovac s.r.o.</h2>
                 <p class="py-3">
                     Sme začínajúca firma na Slovensku s dlhoročnými skúsenosťami z Rakúska a Švajčiarska.
                 </p>
@@ -72,9 +70,47 @@
         </div>
     </section>
 
-    <section id="arbeit">
-        <div class="reveal container">
-            <h2>Naša práca</h2>
+    <section id="sluzby" class="reveal">
+        <div class="container sm:px-[30px] pb-20">
+            <h2 class="m-3 mt-8">Služby</h2>
+            <div class="w-full flex flex-col md:flex-row border-[1px] border-[sienna] rounded-lg">
+                <div id="strechy" class="w-full md:w-1/2 sm:pr-8 p-6">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-people-roof text-2xl text-[sienna]"></i>
+                        <h3 class="text-center text-3xl pb-6">Hydroizolácia plochej strechy</h3>
+                    </div>
+                    <ul class="list-disc px-5 text-xl text-[#555]">
+                        <li class="pb-3">Či už novostavba alebo rekonštrukcia, radi Vám poradíme s rozhodnutím pre
+                            správny strešný systém
+                            v závislosti od použitia.</li>
+                        <li class="pb-3"> Vďaka našej širokej odbornosti vám môžeme ponúknuť správne riešenie so
+                            správnymi materiálmi.
+                        </li>
+                    </ul>
+                </div>
+                <div id="servis" class="w-full md:w-1/2 md:pl-8 pt-6 md:pt-6 p-6 border-t-[1px] md:border-t-0 border-[sienna]">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-toolbox text-2xl text-[sienna]"></i>
+                        <h3 class="text-center text-3xl pb-6">Strešný servis</h3>
+                    </div>
+                    <ul class="pb-3 list-disc px-5 text-xl text-[#555]">
+                        <li class="pb-3">Strechy sú najviac namáhané časti budovy. Sú neustále vystavené extrémnym
+                            poveternostným
+                            podmienkam.</li>
+                        <li class="pb-3">Vietor, dážď, slnko a mráz sú len niektoré z kritérií, ktoré môžu ovplyvniť
+                            trvanlivosť strechy.</li>
+                        <li class="pb-3">Pravidelné kontrolné a údržbárske práce predlžujú životnosť Vašej budovy z
+                            dlhodobého hľadiska.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="arbeit" class="reveal bg-[#f5f5f7]">
+        <div class="container">
+            <h2>Galéria</h2>
             <div class="gallery">
 
                 <a href="./media/praca/20210729_170324.jpg" data-lightbox="roadtrip-1"><img
@@ -126,19 +162,19 @@
         </div>
     </section>
 
-    <section id="contact" class="reveal">
-        <div class="contact-container container">
+    <section id="contact">
+        <div class="reveal contact-container container rounded-lg">
 
             <div class="form-container text-center">
-                <h2 class="text-center text-3xl uppercase text-[#555]">Kontakt</h2>
+                <h2 class="text-center mb-3">Kontakt</h2>
 
                 <span
-                    class="inline-block text-center text-lg w-max p-3 py-1 mt-3 rounded-t-lg text-[white] bg-[sienna]">
+                    class="inline-block text-center text-2xl w-max p-3 py-1 mt-3 rounded-t-lg text-[white] bg-[sienna]">
                     Dávid Kováč
                 </span>
 
                 <div
-                    class="p-5 mb-7 border-[1px] border-[sienna] rounded-lg text-base flex sm:flex-row flex-col justify-around items-center gap-6">
+                    class="p-5 mb-7 border-[1px] border-[sienna] rounded-lg  text-xl text-[#555] flex sm:flex-row flex-col justify-around items-center gap-6">
 
 
                     <a href="tel:421908210111" class="flex flex-col w-48 hover:text-[sienna]">
@@ -156,9 +192,9 @@
                     </a>
                 </div>
 
-                <h3 class="mb-2 text-lg font-bold text-[sienna]">Napíšte nám</h3>
+                <h3 class="mb-2 text-2xl font-bold text-[sienna]">Napíšte nám</h3>
 
-                <form>
+                <form class="text-xl text-[#555]">
                     <div class="inputBox">
                         <input type="text" required="required" />
                         <span>Meno</span>
@@ -184,15 +220,15 @@
 
 
     <footer id="footer" class="bg-[sienna] w-full p-5 text-center text-lg">
-        <h2 class="uppercase">Kovac s.r.o. &copy; all rights reserved</h2>
-        <h2>Designed by <a href="https://slavomir-kotlar.sk/index.html"
-                class="hover:text-white transition ease-in delay-750">Slavomír Kotlár</a></h2>
+        <h3 class="uppercase">Kovac s.r.o. &copy; all rights reserved</h3>
+        <h3>Designed by <a href="https://slavomir-kotlar.sk/index.html"
+                class="hover:text-white transition ease-in delay-750">Slavomír Kotlár</a></h3>
     </footer>
 
 </body>
-<script src="./js/script.js"></script>
 <!-- .................../ JS Code for smooth scrolling /...................... -->
 <script>
+    const vyskaNav = document.querySelector("nav").offsetHeight;
     $(document).ready(function () {
         // Add smooth scrolling to all links
         $("a").on("click", function (event) {
@@ -208,8 +244,7 @@
                 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $("html, body").animate(
                     {
-
-                        scrollTop: $(hash).offset().top - 60 + "px",
+                        scrollTop: $(hash).offset().top - vyskaNav + "px",
                     },
                     800,
                     function () {
@@ -221,5 +256,6 @@
         });
     });
 </script>
+<script src="./js/script.js"></script>
 
 </html>
