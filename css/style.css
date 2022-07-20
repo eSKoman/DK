@@ -871,7 +871,6 @@ video {
 }
 
 html {
-  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding: 60px;
@@ -1268,6 +1267,30 @@ nav{
   display: flex;
   position: fixed;
   z-index: 10;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes example {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+@keyframes example {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
 }
 
 /*Styling Links*/
