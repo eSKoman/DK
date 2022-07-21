@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/lightbox.min.css" rel="stylesheet" />
     <script src="./js/lightbox-plus-jquery.min.js"></script>
-    
+
 </head>
 
 <body id="home">
@@ -73,41 +73,48 @@
     <section id="sluzby" class="reveal">
         <div class="container sm:px-[30px] pb-20">
             <h2 class="m-3 mt-8">Služby</h2>
-            <div class="w-full flex flex-col md:flex-row border-[1px] border-[sienna] rounded-lg">
-                <div id="strechy" class="w-full md:w-1/2 sm:pr-8 p-6">
-                    <div class="flex flex-col items-center">
-                        <i class="fa-solid fa-people-roof text-2xl text-[sienna]"></i>
-                        <h3 class="text-center text-3xl pb-6">Hydroizolácia plochej strechy</h3>
+            <div class="border-[1px] border-[sienna] rounded-lg">
+                <div class="w-full flex flex-col-reverse lg:flex-row">
+                    <img src="./media/3.jpg" alt="Zelená strecha" class="w-full lg:w-1/2 p-6 pt-0 lg:pr-0 md:pt-6 object-cover">
+                    <div id="strechy" class="w-full lg:w-1/2 md:pl-8 md:pr-3 px-12 py-6 md:pt-6">
+                        <div class="flex flex-col items-center">
+                            <i class="fa-solid fa-people-roof text-2xl text-[sienna]"></i>
+                            <h3 class="text-center text-3xl pb-6">Hydroizolácia plochej strechy</h3>
+                        </div>
+                        <ul class="list-disc px-5 text-xl text-[#555]">
+                            <li class="pb-3">Či už novostavba alebo rekonštrukcia, radi Vám poradíme s rozhodnutím pre
+                                správny strešný systém
+                                v závislosti od použitia.</li>
+                            <li class="pb-3">Vďaka našej širokej odbornosti vám môžeme ponúknuť správne riešenie so
+                                správnymi materiálmi.
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="list-disc px-5 text-xl text-[#555]">
-                        <li class="pb-3">Či už novostavba alebo rekonštrukcia, radi Vám poradíme s rozhodnutím pre
-                            správny strešný systém
-                            v závislosti od použitia.</li>
-                        <li class="pb-3"> Vďaka našej širokej odbornosti vám môžeme ponúknuť správne riešenie so
-                            správnymi materiálmi.
-                        </li>
-                    </ul>
                 </div>
-                <div id="servis" class="w-full md:w-1/2 md:pl-8 pt-6 md:pt-6 p-6 border-t-[1px] md:border-t-0 border-[sienna]">
-                    <div class="flex flex-col items-center">
-                        <i class="fa-solid fa-toolbox text-2xl text-[sienna]"></i>
-                        <h3 class="text-center text-3xl pb-6">Strešný servis</h3>
+                <div class="w-full flex flex-col lg:flex-row">
+                    <div id="servis"
+                        class="w-full lg:w-1/2 md:pl-8 md:pr-0 pt-6 md:pt-3 p-12 pb-3 border-t-[1px] md:border-t-0 border-[sienna]">
+                        <div class="flex flex-col items-center">
+                            <i class="fa-solid fa-toolbox text-2xl text-[sienna]"></i>
+                            <h3 class="text-center text-3xl pb-6">Strešný servis</h3>
+                        </div>
+                        <ul class="pb-3 list-disc px-5 text-xl text-[#555]">
+                            <li class="pb-3">Strechy sú najviac namáhané časti budovy. Sú neustále vystavené extrémnym
+                                poveternostným
+                                podmienkam.</li>
+                            <li class="pb-3">Vietor, dážď, slnko a mráz sú len niektoré z kritérií, ktoré môžu ovplyvniť
+                                trvanlivosť strechy.</li>
+                            <li class="pb-3">Pravidelné kontrolné a údržbárske práce predlžujú životnosť Vašej budovy z
+                                dlhodobého hľadiska.</li>
+                        </ul>
                     </div>
-                    <ul class="pb-3 list-disc px-5 text-xl text-[#555]">
-                        <li class="pb-3">Strechy sú najviac namáhané časti budovy. Sú neustále vystavené extrémnym
-                            poveternostným
-                            podmienkam.</li>
-                        <li class="pb-3">Vietor, dážď, slnko a mráz sú len niektoré z kritérií, ktoré môžu ovplyvniť
-                            trvanlivosť strechy.</li>
-                        <li class="pb-3">Pravidelné kontrolné a údržbárske práce predlžujú životnosť Vašej budovy z
-                            dlhodobého hľadiska.</li>
-                    </ul>
+                    <img src="./media/2.jpg" alt="Servis plochej strechy" class="w-full lg:w-1/2 p-6 pt-0 object-cover">
                 </div>
             </div>
         </div>
     </section>
 
-    
+
     <section id="arbeit" class="reveal bg-[#f5f5f7]">
         <div class="container">
             <h2>Galéria</h2>
@@ -194,7 +201,7 @@
 
                 <h3 class="mb-2 text-2xl font-bold text-[sienna]">Napíšte nám</h3>
 
-                <form class="text-xl text-[#555]">
+                <form>
                     <div class="inputBox">
                         <input type="text" required="required" />
                         <span>Meno</span>
